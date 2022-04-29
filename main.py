@@ -3,15 +3,15 @@ import os
 from twilio.rest import Client
 
 OWM_ENDPOINT = "https://api.openweathermap.org/data/2.5/onecall"
-APPID = "55783735eb0a48e4282582719a5166cc"
-MY_NUMBER = "+19896231871"
+APPID = "GET YOUR API"
+MY_NUMBER = "YOUR NUMBER"
 
-account_sid = "AC013411a00bd15f6828118bbf54105e1c"
-auth_token = "886a642efa965ffdef17ae48f482b204"
+account_sid = "GET YOUR ID"
+auth_token = "YOUR TOKEN"
 os.environ.get()
 params = {
-    "lat": 9.175240,
-    "lon": 76.503098,
+    "lat": "YOUR LATITUDE",
+    "lon": YOUR LONGITUDE,
     "exclude": "current,minutely,daily,alerts",
     "appid": APPID
 }
@@ -29,7 +29,7 @@ if is_rain:
     message = client.messages.create(
         body="Don't forget to bring and umbrella ☂️",
         from_=MY_NUMBER,
-        to='+919787456108'
+        to='TO NUMBER'
     )
 
     print(message.status)
